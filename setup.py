@@ -5,7 +5,7 @@ HYPEN_E_DOT='-e .'
 
 def get_requirements(file_path:str)->List[str]:
     '''
-    this function will return the list of requirements
+    essa função retorna a lista de 'requirements.txt'
     '''
     requirements=[]
     with open(file_path) as file_obj:
@@ -18,10 +18,10 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup = (
-    name = "mlproject-end-to-end",
+    name = "projetoML-ponta-ponta",
     version = "0.0.1",
-    author = "Abhinaba",
-    author_email = "abhigyan631@gmail.com",
+    author = "DjaksonTI",
+    author_email = "djakcg@gmail.com",
     packages = find_packages(),
     install_requires = get_requirements('requirements.txt')
     )
